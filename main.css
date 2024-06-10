@@ -1,0 +1,245 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.maincon{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  background-color: #F8F7F6;
+}
+
+section{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   scroll-snap-align: start;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* The hero image */
+.one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("coverHero.jpg") ;
+    height: 100%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    position: relative;
+    border-radius: 30px;
+  }
+  /* Position the navbar container inside the image */
+.container {
+      position: absolute;
+      margin: 0px;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* The navbar */
+.topnav {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      margin-right: 0%;
+    
+    }
+
+
+    /* Navbar links */
+.topnav a {
+      float: right;
+      color: #f2f2f2; 
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+.topnav a:hover {
+      color: black;
+    }
+
+  /* Place text in the middle of the image */
+.one .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  
+
+div.gallery {
+  border-radius: 30px;
+  padding: 0 20px 0 20px;
+  margin: 0;
+}
+
+div.gallery:hover {
+  border-radius: 30px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 90%;
+  border-radius: 30px;
+}
+
+div.desc {
+  padding: 5px;
+  margin-top: 0px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #a17d609c;
+  color: white;
+}
+
+
+.responsive {
+  padding: 10px 10px 10px 10px;
+  justify-content: center;
+  width: 80%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  
+}
+
+
+/* page keluaran makeup terbaru class three*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*isi artikel isiart.html */
+.containerArt{
+  display: flex; 
+  flex-direction: row; 
+  width: 90%;
+  margin-top: 6%;
+  margin-left: 5%;
+  height:auto;
+  color: #545454;
+}
+
+/* isi kategori isikategori.html*/
+
+.list-produk
+{
+    border: 1px solid gainsboro;
+    padding: 200px;
+    width: 100%;
+    margin: 0px;
+}
+ 
+.list-produk:hover
+{
+    transition-duration: 700ms;
+    box-shadow: 5px 5px gainsboro;
+    pointer-events:auto;
+}
+ 
+.list-produk img
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: 5px;
+}
+ 
+.list-produk h4, .list-produk h5
+{
+    color: crimson;
+    text-align: center;
+    margin-bottom: 5px;
+}
+ 
+
+
+
+
+/* isi review produk review.html*/
+.isireview{
+  display: flex; 
+  flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
