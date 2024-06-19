@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> FHRODE | staff</title>
+  <style>
+    * {
+      font-family: "Poppins";
+    }
+    /* Styling untuk navbar */
+    .navbar {  
+      background-color: #f0f0f0a9;
+      display: flex; 
+      flex-direction: row;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 30px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-left: 1px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+
+    .navbar li {
+      display: inline-block;
+      margin-right: 100px;
+      margin-left: 100px;
+      border-radius: 10px; 
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #545454;
+      font-weight: bold;
+    }
+
+/* Styling untuk tabel */
+    .tabel {
+      display: none; /* Sembunyikan tabel secara default */
+      border-collapse: collapse;
+      width: 100%;
+      border-radius: 30px;
+      margin-top: 50px;
+    }
+
+    .tabel img {
+      width: 50%;
+      height: auto;
+      padding: 3px;
+    }
+
+    .tabel th, .tabel tr {
+      text-align: center;
+      color: #545454;
+      padding: 15px;
+      border-bottom: 1px solid #66565a;
+      background-color: #f0f0f0;
+    }
+
+    .tabel td {
+      height: 50px;
+      text-align: center;
+      border-bottom: 1px solid #66565a;
+    }
+
+    .tabel tr:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+
+    .btn-group button {
+      background-color: #46575c; /* Green background */
+      border: 1px solid rgb(79, 94, 79); /* Green border */
+      color: white; /* White text */
+      padding: 10px 10px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      border-radius: 50px;
+      font-weight: 500;
+    }
+
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .btn-group button:not(:last-child) {
+      border-right: none; /* Prevent double borders */
+    }
+
+    .btn-group button:hover {
+      background-color: #718a7271;
+    }
+
+    /* Styling for the popup form */
+    .popup-form {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 30px;
+      border-radius: 50px;
+      z-index: 10;
+      height: 70%;
+      width: 50%;
+      overflow-y: scroll;
+      color: #f0f0f0;
+      background-color: #545454cb;
+    }
+
+    .popup-form .form-group {
+      margin-bottom: 15px;
+    }
+
+    .popup-form .form-label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .popup-form .form-input {
+      width: 100%;
+      padding:  10px 0 0 10px;
+      border-radius: 5px;
+    }
+
+    .popup-form .form-button {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .popup-form .form-button.cancel {
+      background-color: #d86868;
+      cursor: pointer;
+      color: white;
+      float: left;
+      margin-left: 34%;
+      margin-top: 4%;
+    }
+
+    .popup-form .form-button.save {
+      background-color: #62aa62;
+      color: white;
+      margin-top: 4%;
+      cursor: pointer;
+      float: right;
+      margin-right: 40%;
+    }
+    .footer{
+  margin-top:25%; display: flex; width: 100%; height: 55%; flex-direction: column; background-color: #E0E0E0; border-radius: 10%;
+}
+
+.pg1{
+  color: #545454; margin-top:3%; display: flex; width: 100%; height: 50%; flex-direction: row; margin-left: 5%;
+}
+.satu{
+  color: #545454;float: left; display: flex; flex-direction: column; align-items: flex-start;
+}
+.satu h1{ font-size:80px;}
+.dua{
+  display: flex; flex-direction: column; margin-left: 15%; color: #545454;
+}
+.tiga{
+  display: flex; flex-direction: column;  align-items: flex-start; margin-left: 12%; color: #545454;
+}
+.empat{
+  display: flex; flex-direction: column; align-items: flex-start; margin-left: 10%; color: #545454;
+}
+.lima{
+  margin-top: 7%; text-align: center; color: #545454;
+}
+
+    @media only screen and (max-width: 500px) {
+
+.navbar{
+  width: 92%;
+}
+.navbar li{
+  width: auto;
+  margin: auto;
+  font-size: small;
+}
+.tabel{
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.tabel tr{
+  font-size: small;
+} .seven{
+          width:100%;
+          
+        }
+.footer{
+  height: auto;
+  border-radius: 30px;
+}
+        .pg1{
+          display:flex;
+          flex-direction:column;
+          text-align:left;
+          margin-left:10px;
+          
+        }
+        .satu{
+          margin-left:10px;
+          height: auto;
+        }
+        .satu h1{
+          font-size:50px;
+          margin-top: 2%;
+          margin-bottom: 0%;
+        }
+        
+        .dua{
+          text-align:left;
+          margin-left:10px;
+        }
+        .dua h1{
+          text-align:left;
+          margin-right:325px;
+        }
+        .tiga{
+          margin-left:10px;
+        }
+        .empat{
+          margin-left:10px;
+          margin-bottom: 10%;
+        }
+        .lima {
+          font-size:15px;
+        }
+
+}
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <a href="login.html" style="text-decoration: none; color: #545454;"><h1 style="text-align: center;">FHRODE</h1></a>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#kelola-produk" onclick="showTable('kelola-produk')">Manage Product</a></li>
+      <li><button style="border-radius: 10px; font-weight: bold; cursor: pointer;" onclick="showPopupForm()">ADD PRODUCT</button></li>
+     </ul>
+    <ul>
+      <li><a href="#kelola-talkshow" onclick="showTable('kelola-talkshow')">Manage Event</a></li>
+      <li><button style="border-radius: 10px; font-weight: bold; cursor: pointer;" onclick="showPopupForm2()">ADD EVENT</button></li>
+    </ul> 
+    <ul>
+      <li><a href="#kelola-artikel" onclick="showTable('kelola-artikel')">Manage Article</a></li>
+      <li><button style="border-radius: 10px; font-weight: bold; cursor: pointer;" onclick="showPopupForm3()">ADD ARTICLE</button></li>
+    </ul>
+  </nav>
+
+  <div id="kelola-produk" class="tabel">
+    <table>
+      <thead>
+        <tr>
+            <th>Picture</th>
+            <th>Brand</th>
+            <th>Category</th>
+            <th>Review</th>
+            <th>Rating</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td><img src="images/ctg3.jpg" alt=""></td>
+            <td>Le 8 Hypnos </td>
+            <td>Eyeliner</td>
+            <td>Teksture : pigmented, waterproof, easy to blend</td>
+            <td>4/5</td>
+            <td>Rp 650.000,00</td>
+            <td><div class="btn-group">
+              <button>Edit</button>
+              <button>Delete</button> </div></td>
+          </tr> 
+          <tr>
+            <td><img src="images/blush2.jpg" alt=""></td>
+            <td>Dior </td>
+            <td>Blush On</td>
+            <td>Teksture : pigmented, easy to blend</td>
+            <td>5/5</td>
+            <td>Rp 590.000,00</td>
+            <td><div class="btn-group">
+              <button>Edit</button>
+              <button>Delete</button> </div></td>
+          </tr> 
+          <tr>
+            <td><img src="images/blush6.jpg" alt=""></td>
+            <td>Dior </td>
+            <td>Blush On</td>
+            <td>Teksture : pigmented, easy to blend</td>
+            <td>5/5</td>
+            <td>Rp 590.000,00</td>
+            <td><div class="btn-group">
+              <button>Edit</button>
+              <button>Delete</button> </div></td>
+          </tr> 
+          <tr>
+            <td><img src="images/blush8.jpg" alt=""></td>
+            <td>Dior </td>
+            <td>Blush On</td>
+            <td>Teksture : pigmented, easy to blend</td>
+            <td>5/5</td>
+            <td>Rp 590.000,00</td>
+            <td><div class="btn-group">
+              <button>Edit</button>
+              <button>Delete</button> </div></td>
+          </tr> 
+      </tbody>
+    </table>
+  </div>
+
+  <div id="kelola-talkshow" class="tabel">
+    <table>
+      <thead>
+        <tr>
+            <th>Event</th>
+            <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td><img src="images/ts3.png" alt=""></td>
+            <td><div class="btn-group">
+              <button>Delete</button> </div>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/ts1.jpg" alt=""></td>
+            <td><div class="btn-group">
+              <button>Delete</button> </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="kelola-artikel" class="tabel">
+    <table>
+      <thead>
+        <tr>
+            <th>Judul Artikel</th>
+            <th>Picture Display</th>
+            <th>Picture On Article</th>
+            <th>Sinopsis</th>
+            <th>Article</th>
+            <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>GET THE LOOK : ALEXA DEMIE!</td>
+            <td><img src="images/artikel1.jpg" alt=""> </td>
+            <td><img src="images/artikel1-inside.jpg" alt=""></td>
+            <td>Alexa Demie's makeup signature is a captivating blend of 90s glam and modern edge. Think sharp cat eyes, a bold lip, and a flawless base with glowing skin, STEAL HER MAKEUP LOOK!</td>
+            <td>Think sharp cat eyes, a bold lip (often a nude with a brown gloss for a dimensional effect), and a flawless base with glowing skin. 
+              She loves experimenting with pops of color on the eyes, while keeping the brows natural and brushed-up. Whether it's a red carpet look or a casual day out, her makeup always exudes confidence and a touch of vintage Hollywood allure. MAKEUP GUIDE High coverage makeup : YSL FOUNDation, lip : mac lip pencil, fenty beauty gloss bomb, nude rough dior proof lipstick, eyeliner : stilla stay all day liquid liner. mascara : volumizing too faced. eyebrow : anastasia beverly hills pomade</td>
+            <td><div class="btn-group">
+              <button>Edit</button>
+              <button>Delete</button> </div></td>
+            </tr>
+            <tr>
+              <td>THE VIRAL : BODY LOTION</td>
+              <td><img src="images/artikel2.jpg" alt=""> </td>
+              <td><img src="images/artikel2-inside.jpg" alt=""></td>
+              <td>back again with rhode, rhode AGAIN! Seems this lotion catching many eyes because of their formula, are you curios? TAKE A LOOK!</td>
+              <td>As a designer, we love to make people satisfied with our chlotes. Starting from the design, fabric, cuts and MORE!
+                this year, will bring up corporate fits to makes people feel comfortable even on their stressing days. Our events always poppin up as we said because obviously 
+                their chlotes was AMAZING. Not just the chlotes, but the way they build brand identity was insane.
+              </td>
+              <td><div class="btn-group">
+                <button>Edit</button>
+                <button>Delete</button> </div></td>
+              </tr>   
+    </table>
+  </div>
+
+  <div class="popup-form" id="popupForm">
+    <h2 style="text-align: center;">ADD PRODUCTS</h2>
+    <form>
+      <div class="form-group">
+        <label for="myfile" class="form-label">Picture :</label>
+        <input type="file" id="myfile" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="nama-barang" class="form-label">Brand :</label>
+        <input type="text" id="nama-barang" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="harga-beli" class="form-label">Category :</label>
+        <input type="text" id="harga-beli" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="harga-jual" class="form-label">Review :</label>
+        <input type="text" id="harga-jual" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="kategori" class="form-label">Rating :</label>
+        <input type="text" id="kategori" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="stok" class="form-label">Price :</label>
+        <input type="text" id="stok" class="form-input">
+      </div>
+      <div class="form-group">
+        <button type="button" class="form-button save" onclick="saveData()">SAVE</button>
+        <button type="button" class="form-button cancel" onclick="hidePopupForm()">CANCEL</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup-form" id="popupForm2">
+    <h2 style="text-align: center;">ADD EVENT</h2>
+    <form>
+      <div class="form-group">
+        <label for="myfile" class="form-label">Picture :</label>
+        <input type="file" id="myfile" class="form-input">
+      </div>
+      <div class="form-group">
+        <button type="button" class="form-button save" onclick="saveData()">SAVE</button>
+        <button type="button" class="form-button cancel" onclick="hidePopupForm2()">CANCEL</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup-form" id="popupForm3">
+    <h2 style="text-align: center;">ADD ARTICLE</h2>
+    <form>
+      <div class="form-group">
+        <label for="nama-barang" class="form-label">Judul :</label>
+        <input type="text" id="nama-barang" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="myfile" class="form-label">Picture Display :</label>
+        <input type="file" id="myfile" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="myfile" class="form-label">Picture On Article :</label>
+        <input type="file" id="myfile" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="harga-beli" class="form-label">Synopsis :</label>
+        <input type="text" id="harga-beli" class="form-input">
+      </div>
+      <div class="form-group">
+        <label for="harga-jual" class="form-label">Article :</label>
+        <input type="text" id="harga-jual" class="form-input">
+      </div>
+      <div class="form-group">
+        <button type="button" class="form-button save" onclick="saveData()">SAVE</button>
+        <button type="button" class="form-button cancel" onclick="hidePopupForm3()">CANCEL</button>
+      </div>
+    </form>
+  </div>
+
+
+  <script>
+    function showTable(tableId) {
+      var tables = document.querySelectorAll('.tabel');
+      tables.forEach(function(table) {
+        table.style.display = 'none';
+      });
+      document.getElementById(tableId).style.display = 'block';
+    }
+
+    function showPopupForm() {
+      document.getElementById('popupForm').style.display = 'block';
+    }
+
+    function hidePopupForm() {
+      document.getElementById('popupForm').style.display = 'none';
+    }
+
+    function showPopupForm2() {
+      document.getElementById('popupForm2').style.display = 'block';
+    }
+
+    function hidePopupForm2() {
+      document.getElementById('popupForm2').style.display = 'none';
+    }
+
+    function showPopupForm3() {
+      document.getElementById('popupForm3').style.display = 'block';
+    }
+
+    function hidePopupForm3() {
+      document.getElementById('popupForm3').style.display = 'none';
+    }
+
+    function saveData() {
+      // Implementasi logika penyimpanan data
+      alert('Data berhasil disimpan!');
+      hidePopupForm();
+    }
+  </script>
+
+   
+<section id="about" class="seven">
+  <footer class="footer">
+    <div class="pg1">
+    <div class="satu">
+      <h1>FHRODE</h1>
+      <a> your #1 makeup buddies.</a>
+      <a>Information about beauty is all here!</a>
+    </div>
+
+    <div class="dua">
+      <h1> MENU </h1>
+      <a> home </a>
+      <a> category </a>
+      <a> article </a>
+      <a> new </a>
+    </div>
+
+    <div class="tiga">
+      <h1> PARTNERS </h1>
+      <a> sephora </a>
+      <a> rhode </a>
+      <a> milk </a>
+      <a> charlotte tilburry </a>
+      <a> kylie makeup </a>
+    </div>
+
+    <div class="empat" >
+      <h1> SUPPORT </h1>
+      <a> drop us a note! </a>
+      <a> fhrode@gmail.com </a>
+    </div>
+  </div>
+    <div style="margin-bottom: 0%; text-align: center; color: #545454;">
+    © Copyright 2024 - All right reserved by Cut Zhiffa - FHRODE
+    </div>
+  </footer>
+</section>   
+
+</body>
+</html>
+      

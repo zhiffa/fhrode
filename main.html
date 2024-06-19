@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FHRODE | #1 beauty buddy</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,31 +12,34 @@
 </head>
 <body>
     <div class="maincon">
+      <header>
+        <a href="login.html" style="text-decoration: none; border-radius: 30px;"><h1 style="color: #545454;text-align: center; margin-top: 3px;">FHRODE</h1></a>
+      </header>
 
         <section class="one">
             <div class="hero-image" > 
                 <div class="container">
-                    <div class="topnav">
-                      <a href="loginn.html">ACCOUNT</a>
+                    <div class="topnav" id="myTopnav">
+                      <a href="login.html">ACCOUNT</a>
                       <a href="#about">ABOUT</a>
-                      <a href="#article">ARTICLE</a>
+                      <a href="article.html">ARTICLE</a>
                       <a href="#new">NEW</a>
                       <a href="#category">CATEGORY</a>
                       <a href="#trend">TRENDS</a>
-                      <a href="#home" style="float: left; left:4%; position: fixed; color: #A17D60;"><i class="fa fa-fw fa-home"></i></a>
+                      <a href="#home" style="float: left; left:4%; position: fixed; color: #999595;"><i class="fa fa-fw fa-home"></i></a>
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
                     </div>
-
                 </div>
                 <div id="home" class="hero-text">
                   <h1 style="font-size:40px">FHRODE</h1>
                   <p>your beauty buddy</p>
                 </div>
-              </div>   
-        </section>
-
-        <section  id="trend" class="two" style="justify-content: center; display: flex; flex-direction: column;">
-            <h1 style="color: #A17D60; justify-items: center; height: auto;  ">FHRODE FAVORITE</h1> 
-            <div class="responsive" style="margin-top: 0%; margin-left: 150px;">
+              </div>               
+          </section>
+        <section  id="trend" class="two">
+            <h1>FHRODE'S FAVORITE</h1> 
+            <div class="responsive">
                 <div class="gallery">
                   <a target="_blank" href="#">
                     <img src="images/fav1.jpg" alt="Cinque Terre" >
@@ -58,52 +61,59 @@
                   <div class="desc">Shades Shine - Setting Spray</div>
                 </div> 
               </div>  
-        </section>
+          </section>
 
         
-        <section id="new" class="three" style="justify-content: center; display: flex; flex-direction: column;">
-          <h1 style="justify-items: center; width: 100%; height: auto; color: #CB516D;"> NEW RELEASE </h1>
-            <img src="images/neww.jpg" 
-              style="height: 85%; width: 90%; border-radius: 30px; margin-top: 20px; margin-left: 80px;"/>            
+        <section id="new" class="three">
+          <h1> NEW RELEASE </h1>
+            <a href="trend.html"><img src="images/neww.jpg">  </a>          
         </section>
 
 
     
-        <section id="category" class="four" style="display:flex; flex-direction:column;">
-            <h1>category</h1>    
-    <div class="ctg" style="height: 100%; display: flex; flex-direction: row; width: 100%; justify-content: center;">
+        <section id="category" class="four" >
+            <h1>CATEGORY</h1>    
+    <div class="ctg">
         <div class="list-produk">
-            <img src="images/fav1.jpg" alt="Jaket Parasut" style="width: 100%; height: auto;">
+          <a href="#">
+            <img src="images/ctg1.jpg" alt="Lips"> </a>
         </div>
  
         <div class="list-produk">
-            <img src="images/fav1.jpg" alt="Jaket Tactical" style="width: 100%; height: auto;">
+          <a href="#">
+            <img src="images/ctg2.jpg" alt="Eyeshadow"> </a>
         </div>
  
         <div class="list-produk">
-            <img src="images/fav1.jpg" alt="Jaket Bomber Stylish" style="width: 100%; height: auto;">
+          <a href="#"> 
+          <img src="images/ctg3.jpg" alt="Eyeliner"> </a>
         </div>
  
         <div class="list-produk">
-            <img src="images/fav1.jpg" alt="Jaket Naruto" style="width: 100%; height: auto;">
+          <a href="isikategori.html">
+            <img src="images/ctg4.jpg" alt="Cheeks"> </a>
         </div>        
         </div>
 
-        <div class="ctg" style="height: 100%; display: flex; flex-direction: row; width: 100%; justify-content: center;">
+        <div class="ctg">
           <div class="list-produk">
-              <img src="images/fav1.jpg" alt="Jaket Parasut" style="width: 100%; height: auto;">
+            <a href="#">
+              <img src="images/ctg5.jpg" alt="Lashes"> </a>
           </div>
    
           <div class="list-produk">
-              <img src="images/fav1.jpg" alt="Jaket Tactical" style="width: 100%; height: auto;">
+            <a href="#">
+              <img src="images/ctg6.jpg" alt="Face" ></a>
           </div>
    
           <div class="list-produk">
-              <img src="images/fav1.jpg" alt="Jaket Bomber Stylish" style="width: 100%; height: auto;">
+            <a href="#">
+              <img src="images/ctg7.jpg" alt="Makeup Tools" ></a>
           </div>
    
           <div class="list-produk">
-              <img src="images/fav1.jpg" alt="Jaket Naruto" style="width: 100%; height: auto;">
+            <a href="#">
+              <img src="images/ctg8.jpg" alt="Eyebrow" ></a>
           </div>
           </div>    
         </section>
@@ -112,26 +122,82 @@
 
 
         <section id="article" class="five">
-          <div class="article" style="background-color: #E0E0E0; margin-top: 60px; width: 90%; height: 80%; display: flex; flex-direction: row; border-radius: 30px; margin-left: 30px;">
-          <div class="outer" style="align-content: flex-end; margin-bottom: 30px; width: 50%; margin-left: 20px;">
-              <h1 style="color: #545454; justify-content: left; text-align: left;">GET THE LOOK : ALEXA DEMIE!</h1>
-              <p style="text-align: start; line-height: 1.4; color: #545454; margin: 20px 0; padding-right: 90px;">Alexa Demie's makeup signature is a captivating blend of 90s glam and modern edge. Think sharp cat eyes, a bold lip, and a flawless base with glowing skin, STEAL HER MAKEUP LOOK!</p>
-              
-               <button style="width: 70px; height: 30px; border-radius: 20px; border: #757070;"><a href="isiart.html" style="text-decoration: none; color: #757070; font-weight: bold;">Read</a> </button>
+          <div class="article">
+          <div class="outer">
+              <h1>GET THE LOOK : ALEXA DEMIE!</h1>
+              <p>Alexa Demie's makeup signature is a captivating blend of 90s glam and modern edge. Think sharp cat eyes, a bold lip, and a flawless base with glowing skin, STEAL HER MAKEUP LOOK!</p>
+               <button><a href="isiart.html">Read</a> </button>
           </div>
-            <img src="images/artikel1.jpg" width="40%" height="90%" border-radius="30px" style="border-radius: 30px; margin-top: 20px; margin-left: 80px;">
-          
+            <img src="images/artikel1.jpg">
           </div>
+
+          <div class="article">
+            <div class="outer">
+                <h1>THE VIRAL : THE CORAL DUO </h1>
+                <p>back again with rhode, rhode AGAIN! Seems this duo catching many eyes because of their formula. A full look that fits in your pocket for glowy cheeks and glossy lips on-the-go. Each duo combines a paired shade of Pocket Blush with a limited edition summer Peptide Lip Tint to wear together, are you curios? TAKE A LOOK!</p>
+                 <button><a href="#">Read</a> </button>
+            </div>
+              <img src="images/artikel2.jpg">
+            </div>
         </section>
 
         
-    
-        <section id="about" class="six">
-          <h1>page six footer</h1>    
+      
+        <section id="talkshow" class="six">
+          <h1> EVENTS </h1>
+           <img src="images/ts3.png"> 
+            
         </section>
 
 
+        <section id="about" class="seven">
+          <footer class="footer">
+            <div class="pg1">
+            <div class="satu">
+              <h1>FHRODE</h1>
+              <a> your #1 makeup buddies.</a>
+              <a>Information about beauty is all here!</a>
+            </div>
+
+            <div class="dua">
+              <h1> MENU </h1>
+              <a> home </a>
+              <a> category </a>
+              <a> article </a>
+              <a> new </a>
+            </div>
+
+            <div class="tiga">
+              <h1> PARTNERS </h1>
+              <a> sephora </a>
+              <a> rhode </a>
+              <a> milk </a>
+              <a> charlotte tilburry </a>
+              <a> kylie makeup </a>
+            </div>
+
+            <div class="empat">
+              <h1> SUPPORT </h1>
+              <a> drop us a note! </a>
+              <a> fhrode@gmail.com </a>
+            </div>
+          </div>
+            <div class="lima">
+            <a> © Copyright 2024 - All right reserved by Cut Zhiffa - FHRODE </a>
+            </div>
+          </footer>
+        </section>
     </div>
     
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
 </body>
 </html>
